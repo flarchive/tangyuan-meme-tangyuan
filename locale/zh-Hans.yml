@@ -1,0 +1,172 @@
+tangyuan-meme-tangyuan:
+  forum:
+    composer:
+      meme_tooltip: 表情包
+    modal:
+      title: 表情包
+      search_placeholder: 搜索表情包...
+      no_memes: 未找到表情包，请将图片放入 meme 目录。
+      no_results: 没有找到匹配的表情包。
+      no_favorites: 还没有收藏的表情包。
+      no_user_memes: 该用户还没有上传表情包。
+      no_mine: 还没有上传过表情包，点击下方按钮上传你的第一张。
+      tab_official: 官方
+      tab_mine: 上传的表情包
+      tab_favorites: 收藏
+      upload_footer: "没找到自己喜欢的表情包？点击这里上传你喜欢的表情包！"
+      upload_forbidden: 你没有上传表情包的权限。
+      upload_disabled: 用户上传功能已关闭。
+      context:
+        favorite: 收藏
+        unfavorite: 取消收藏
+        set_name: 设置备注名
+        name_dialog_title: 设置备注名
+        name_placeholder: 输入备注名（不超过15字）
+        name_hint: "{count} 字符剩余"
+        cancel: 取消
+        save: 保存
+      tab_context:
+        pin: 置顶此用户
+        unpin: 取消置顶
+    sidebar:
+      nav_title: 表情包
+    gallery:
+      page_title: 表情包
+      back: 返回
+      upload_button: 上传表情包
+      cards:
+        official:
+          title: 官方表情包
+          subtitle: 管理员精选，所有用户可用。
+        mine:
+          title: 上传的表情包
+          subtitle: "你上传了 {count} 张表情包"
+        pending:
+          title: 待审核
+          subtitle: "{count} 张表情包等待审核"
+        users:
+          title: 其他用户
+          subtitle: 其他用户上传并已审核通过的表情包
+      official:
+        title: 官方表情包
+        empty: 还没有官方表情包。
+        upload: 上传官方表情包
+        delete_selected: 删除所选 ({count})
+        select_all: 全选
+        clear_selection: 取消
+        confirm_delete: "确定删除 {count} 张官方表情包？此操作无法撤销。"
+      mine:
+        title: 我上传的表情包
+        empty: 你还没有上传任何表情包。
+        upload: 上传
+        delete_selected: 删除所选 ({count})
+        confirm_delete: "确定删除 {count} 张表情包？此操作无法撤销。"
+        rename: 重命名
+        rename_prompt: "输入新的名称"
+        set_all_private: 全部不公开
+        set_all_private_confirm: "确定将你所有公开的表情包设为不公开？"
+        set_all_private_done: "已将 {count} 张表情包设为不公开。"
+        status:
+          approved: 已通过
+          pending: 审核中
+          rejected: 已拒绝
+      pending:
+        title: 待审核
+        empty: 没有待审核的表情包。
+        approve_all: 一键全部通过
+        approve_selected: 通过所选 ({count})
+        reject_selected: 拒绝所选 ({count})
+        reason_prompt: "拒绝原因（可选）"
+        from_user: "由 {uploaderName} 上传"
+        pending_for: "{time}"
+      users:
+        title: 其他用户
+        empty: 还没有其他用户上传的表情包。
+        count: "{count} 张"
+        back_to_list: 返回用户列表
+        delete_confirm: "确定删除这张表情包？此操作无法撤销。"
+    visibility:
+      title: 设置可见性
+      public: 公开
+      public_desc: 所有人都能在选择器中看到这张表情包。
+      private: 对指定用户可见
+      private_desc: 仅你自己和被允许的用户能看到这张表情包。
+      allowed_list: 允许查看的用户
+      no_allowed_users: 还没有添加任何用户，当前除你自己和管理员外没有人能看到。
+      search_placeholder: 搜索用户名...
+      no_search_results: 没有找到匹配的用户。
+      save: 保存
+      edit_button: 编辑可见性
+      private_with_count: "对 {count} 人可见"
+    upload:
+      modal_title: 上传表情包
+      drag_hint: 将图片拖拽到这里，或点击选择文件
+      select_files: 选择文件
+      clear_all: 清空
+      submit: 上传 ({count})
+      submitting: 上传中...
+      quota_label: "已用 {usedCount}/{maxCount}，{usedSize}/{maxSize}"
+      moderation_notice: 上传的表情包需要审核通过后才能使用。
+      compress_notice: "建议：上传前压缩图片以节省配额。"
+      filename_notice: "建议：使用规范的文件名（例如 happy_cat.webp），其他用户会看到你的文件名。"
+      file_errors:
+        format_not_allowed: 不允许的文件格式。
+        quota_count_exceeded: 已达到表情包数量上限。
+        quota_size_exceeded: 超出存储配额。
+        empty_file: 文件为空。
+        write_failed: 保存失败。
+        upload_error_1: 文件过大（服务器限制）。
+        upload_error_2: 文件过大（表单限制）。
+        upload_error_3: 上传被中断。
+        upload_error_4: 没有选择文件。
+      success: "成功上传 {count} 张表情包。"
+      partial_success: "{success} 张上传成功，{failed} 张失败。"
+      no_files_selected: 请至少选择一个文件。
+    empty_states:
+      login_required: 请先登录后查看此页面。
+      no_permission: 你没有权限查看此页面。
+  admin:
+    settings:
+      title: Meme 表情包 扩展设置
+      section_uploads: 用户上传
+      section_moderation: 审核
+      section_cleanup: 清理
+      allow_user_uploads: 允许用户上传自己的表情包
+      max_uploads_per_user: 每用户最大上传数量
+      max_total_size_per_user: 每用户最大上传总容量 (字节)
+      allowed_formats_regex: 允许的文件格式 (正则表达式)
+      enable_moderation: 用户上传需管理员审核
+      delete_user_memes_on_disable: 关闭用户上传时删除用户已上传的表情包
+      save: 保存设置
+      saved: 设置已保存。
+    permissions:
+      view_memes: 查看表情包页面
+      upload_meme: 上传表情包
+      moderate_meme: 审核表情包
+      manage_official_memes: 管理官方表情包
+  email:
+    meme_approved:
+      subject: "你的表情包已通过审核"
+      body: |
+        你好，
+
+        你在 {forum} 上传的表情包 "{name}" (共 {count} 张) 已通过审核。
+        现在可以在发帖时使用了。
+
+        查看：{url}
+    meme_rejected:
+      subject: "你的表情包未通过审核"
+      body: |
+        你好，
+
+        你在 {forum} 上传的 {count} 张表情包 (包括 "{name}") 未通过审核。
+        原因：{reason}
+
+        相关文件将在 3 天后自动删除。
+
+        重新上传：{url}
+  notifications:
+    meme_approved: "你的表情包已通过审核"
+    meme_approved_multi: "你的 {count} 张表情包已通过审核"
+    meme_rejected: "你的表情包未通过审核"
+    meme_rejected_multi: "你的 {count} 张表情包未通过审核"

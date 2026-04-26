@@ -1,0 +1,19 @@
+# Dependencies
+/js/node_modules
+/vendor
+
+# Build artifacts
+/js/dist/*.js.map
+
+# IDE / OS
+.idea
+.vscode
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

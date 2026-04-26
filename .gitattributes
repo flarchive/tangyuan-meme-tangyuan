@@ -1,0 +1,6 @@
+/.gitignore export-ignore
+/.gitattributes export-ignore
+/js/node_modules export-ignore
+/js/src export-ignore
+/js/tsconfig.json export-ignore
+/js/webpack.config.js export-ignore

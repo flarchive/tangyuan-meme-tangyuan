@@ -1,0 +1,172 @@
+tangyuan-meme-tangyuan:
+  forum:
+    composer:
+      meme_tooltip: Meme stickers
+    modal:
+      title: Meme Stickers
+      search_placeholder: Search memes...
+      no_memes: No memes found. Please add images to the meme directory.
+      no_results: No memes match your search.
+      no_favorites: No favorites yet.
+      no_user_memes: This user has not uploaded any memes yet.
+      no_mine: You haven't uploaded any memes yet. Use the upload button below.
+      tab_official: Official
+      tab_mine: My uploads
+      tab_favorites: Favorites
+      upload_footer: "Didn't find what you like? Click here to upload your own."
+      upload_forbidden: You don't have permission to upload memes.
+      upload_disabled: User uploads are disabled.
+      context:
+        favorite: Add to Favorites
+        unfavorite: Remove from Favorites
+        set_name: Set Custom Name
+        name_dialog_title: Set Custom Name
+        name_placeholder: Enter name (max 15 chars)
+        name_hint: "{count} characters remaining"
+        cancel: Cancel
+        save: Save
+      tab_context:
+        pin: Pin to front
+        unpin: Unpin
+    sidebar:
+      nav_title: Memes
+    gallery:
+      page_title: Memes
+      back: Back
+      upload_button: Upload memes
+      cards:
+        official:
+          title: Official memes
+          subtitle: Curated stickers — always available.
+        mine:
+          title: My uploads
+          subtitle: "You have uploaded {count} memes"
+        pending:
+          title: Pending review
+          subtitle: "{count} memes awaiting moderation"
+        users:
+          title: Other users
+          subtitle: Approved memes from other users
+      official:
+        title: Official memes
+        empty: No official memes yet.
+        upload: Upload official memes
+        delete_selected: Delete selected ({count})
+        select_all: Select all
+        clear_selection: Clear
+        confirm_delete: "Delete {count} official memes? This cannot be undone."
+      mine:
+        title: My uploads
+        empty: You have not uploaded any memes yet.
+        upload: Upload
+        delete_selected: Delete selected ({count})
+        confirm_delete: "Delete {count} memes? This cannot be undone."
+        rename: Rename
+        rename_prompt: "Enter a new name"
+        set_all_private: Make all private
+        set_all_private_confirm: "Set all your public memes to private?"
+        set_all_private_done: "Set {count} memes to private."
+        status:
+          approved: Approved
+          pending: Pending
+          rejected: Rejected
+      pending:
+        title: Pending review
+        empty: No memes awaiting review.
+        approve_all: Approve all
+        approve_selected: Approve selected ({count})
+        reject_selected: Reject selected ({count})
+        reason_prompt: "Rejection reason (optional)"
+        from_user: "Uploaded by {uploaderName}"
+        pending_for: "{time}"
+      users:
+        title: Other users
+        empty: No memes from other users yet.
+        count: "{count} memes"
+        back_to_list: Back to uploader list
+        delete_confirm: "Delete this meme? This cannot be undone."
+    visibility:
+      title: Edit visibility
+      public: Public
+      public_desc: Everyone can see this meme in their picker.
+      private: Restricted
+      private_desc: Only you and users you explicitly allow can see this meme.
+      allowed_list: Allowed users
+      no_allowed_users: No users added yet — only you and moderators can see this meme.
+      search_placeholder: Search usernames...
+      no_search_results: No users match that search.
+      save: Save
+      edit_button: Edit visibility
+      private_with_count: "Visible to {count}"
+    upload:
+      modal_title: Upload memes
+      drag_hint: Drag & drop images here, or click to select
+      select_files: Select files
+      clear_all: Clear all
+      submit: Upload ({count})
+      submitting: Uploading...
+      quota_label: "Used {usedCount} of {maxCount}, {usedSize} / {maxSize}"
+      moderation_notice: Uploads require moderator approval before they can be used.
+      compress_notice: "Tip: compress images before uploading to save your quota."
+      filename_notice: "Tip: use descriptive filenames (e.g. happy_cat.webp)."
+      file_errors:
+        format_not_allowed: Format not allowed.
+        quota_count_exceeded: You have reached the max number of memes.
+        quota_size_exceeded: This file would exceed your storage quota.
+        empty_file: File is empty.
+        write_failed: Could not save file.
+        upload_error_1: File too large (server limit).
+        upload_error_2: File too large (form limit).
+        upload_error_3: Upload was interrupted.
+        upload_error_4: No file was uploaded.
+      success: "{count} memes uploaded successfully."
+      partial_success: "{success} uploaded, {failed} failed."
+      no_files_selected: Please select at least one file.
+    empty_states:
+      login_required: Please log in to view this page.
+      no_permission: You don't have permission to view this page.
+  admin:
+    settings:
+      title: Meme Tangyuan settings
+      section_uploads: User uploads
+      section_moderation: Moderation
+      section_cleanup: Cleanup
+      allow_user_uploads: Allow users to upload their own memes
+      max_uploads_per_user: Maximum memes per user
+      max_total_size_per_user: Maximum total size per user (bytes)
+      allowed_formats_regex: Allowed file formats (regex)
+      enable_moderation: Require moderation for user uploads
+      delete_user_memes_on_disable: Delete user memes when uploads are disabled
+      save: Save settings
+      saved: Settings saved.
+    permissions:
+      view_memes: View the memes page
+      upload_meme: Upload memes
+      moderate_meme: Moderate pending memes
+      manage_official_memes: Manage official memes
+  email:
+    meme_approved:
+      subject: "Your meme was approved"
+      body: |
+        Hi,
+
+        Your meme "{name}" (and {count} in total) has been approved on {forum}.
+        You can now use it in your posts.
+
+        View your memes: {url}
+    meme_rejected:
+      subject: "Your meme was rejected"
+      body: |
+        Hi,
+
+        {count} of your memes (including "{name}") were rejected on {forum}.
+        Reason: {reason}
+
+        The file(s) will be removed from our servers in 3 days.
+
+        Upload again: {url}
+  notifications:
+    meme_approved: "Your meme was approved"
+    meme_approved_multi: "{count} of your memes were approved"
+    meme_rejected: "Your meme was rejected"
+    meme_rejected_multi: "{count} of your memes were rejected"

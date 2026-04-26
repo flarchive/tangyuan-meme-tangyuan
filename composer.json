@@ -1,0 +1,46 @@
+{
+    "name": "tangyuan/meme-tangyuan",
+    "description": "Meme sticker picker for Flarum - insert memes directly into posts with per-user favorites and custom names.",
+    "keywords": [
+        "flarum",
+        "flarum-extension",
+        "meme",
+        "sticker",
+        "emoji",
+        "picker"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tangyuan",
+            "email": "admin@tangyuan.org"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Little-100/meme-tangyuan/issues",
+        "source": "https://github.com/Little-100/meme-tangyuan"
+    },
+    "homepage": "https://github.com/Little-100/meme-tangyuan",
+    "require": {
+        "flarum/core": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tangyuan\\Meme\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Meme Tangyuan",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-images",
+                "color": "#E91E63",
+                "backgroundColor": "#FCE4EC"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
