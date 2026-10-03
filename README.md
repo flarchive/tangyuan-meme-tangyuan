@@ -2,13 +2,13 @@
 
 > **Read-only archive of released versions of tangyuan/meme-tangyuan.** Not for installation: use [Packagist](https://packagist.org/packages/tangyuan/meme-tangyuan) or the [upstream repository](https://github.com/Little100/meme-tangyuan).
 
-**0** versions archived · Latest: [`v0.1.0`](https://github.com/flarchive/tangyuan-meme-tangyuan/tree/archive/v0.1.0) · License: `MIT` · Flarum: `^1.8`
+**1** versions archived · Latest: [`v0.1.0`](https://github.com/flarchive/tangyuan-meme-tangyuan/tree/archive/v0.1.0) · License: `MIT` · Flarum: `^1.8`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `v0.1.0` | 2026-04-26 | `^1.8` | [Browse](https://github.com/flarchive/tangyuan-meme-tangyuan/tree/archive/v0.1.0) |
 
 Catalog entry: [packages/tangyuan-meme-tangyuan.json](https://github.com/flarchive/archive-index/blob/main/packages/tangyuan-meme-tangyuan.json)
 
